@@ -1,0 +1,25 @@
+body {
+    overflow-x: avoid;
+    background: linear-gradient(270deg, #f7f1e3, #4bcffa);
+    font-family: "Open Sans", serif;
+}
+.breadcrumbs {
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+}
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.breadcrumbs ol li+li {
+    padding-left: 10px;
+}
+.breadcrumbs ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: darkblue;
+    content: "/";
+  }
